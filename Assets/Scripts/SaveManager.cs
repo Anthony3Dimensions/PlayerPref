@@ -15,6 +15,8 @@ public class SaveManager : MonoBehaviour
     [SerializeField] private int userScore;
 
     [SerializeField] private Vector3 userPosition;
+
+    [SerializeField] public int numberPoint;
     // Start is called before the first frame update
     void Start()
     {
