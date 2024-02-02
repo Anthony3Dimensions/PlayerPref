@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
+public class PersonajeController : MonoBehaviour
 {
     private CharacterController _controller;
     private Transform _camera; 
@@ -65,7 +65,7 @@ public class CharacterController : MonoBehaviour
 
             Vector3 moveDirection = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
 
-            _controller.Movement(moveDirection.normalized * _playerSpeed * Time.deltaTime);
+            _controller.Move(moveDirection.normalized * _playerSpeed * Time.deltaTime);
         }
     }
 
@@ -82,7 +82,7 @@ public class CharacterController : MonoBehaviour
         {
             Vector3 moveDirection = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
 
-            _controller.Movement(moveDirection.normalized * _playerSpeed * Time.deltaTime);
+            _controller.Move(moveDirection.normalized * _playerSpeed * Time.deltaTime);
         }
     }
 
